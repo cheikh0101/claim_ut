@@ -26,7 +26,7 @@ class Reclamation extends Migration
         */
             $table->foreign('user_id')
                 ->references('id')
-                ->on('etudiant')
+                ->on('etudiants')
                 ->onDelete('restrict')
                 ->onUpdate('restrict');
             $table->timestamps();
