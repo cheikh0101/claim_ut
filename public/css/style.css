@@ -56,7 +56,8 @@ h2 {
       font-size: 12px;
       display: block;
       margin-bottom: 0;
-      color: #b3b3b3; }
+      /*color: #b3b3b3;*/
+    color: #8c14fc; }
     .content .contents .form-group.focus, .content .bg .form-group.focus {
       background: #fff; }
     .content .contents .form-group.field--not-empty label, .content .bg .form-group.field--not-empty label {

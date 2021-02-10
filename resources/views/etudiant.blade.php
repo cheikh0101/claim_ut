@@ -106,6 +106,15 @@
                                             <option>Systèmes d'Exploitation</option>
                                             <option>Algorithme et Programmation 1</option>
                                             <option>Algèbre 1</option>
+                                            <option>Analyse 1</option>
+                                            <option>Algèbre 2</option>
+                                            <option>Analyse 2</option>
+                                            <option>Fondementaux de Physique</option>
+                                            <option>Electricité</option>
+                                            <option>Anglais 1</option>
+                                            <option>Recherche documentaire</option>
+                                            <option >Ondes et Propogation</option>
+                                            <option >Techniques de communications</option>
                                           </select>
                                         </div>
                                         <div class="form-group">

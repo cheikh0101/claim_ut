@@ -30,7 +30,7 @@
                     <hr class="m-0" />
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#semestre4">Semestre 2</a></li>
                     <hr class="m-0" />
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Retourner à l'acceuil?</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Acceuil</a></li>
                     <hr class="m-0" />
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/loginAdministration">Déconnexion</a></li>
                 </ul>
@@ -169,7 +169,6 @@
                                 <th>Arguments</th>
                                 <th>Matiere</th>
                                 <th>Création</th>
-                                <th>Infos Etudiants</th>
                             </tr>
                         </thead>
                         @foreach ($reclamations2 as $reclamation2)
@@ -179,7 +178,6 @@
                             <td>{{$reclamation2->commentaire}}</td>
                             <td>{{$reclamation2->matiere}}</td>
                             <td>{{$reclamation2->created_at}}</td>
-                           
                         </tr>
                         @endforeach
                     </tbody>
