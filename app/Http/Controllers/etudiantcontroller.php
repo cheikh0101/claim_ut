@@ -26,7 +26,8 @@ class etudiantcontroller extends Controller
             return view('loginEtudiant')->with(['message' => 'login incorrecte']);
         } else {
             $etudiant = etudiant::where('email', '=', $request->email)->get();
-            return view('etudiant', compact('etudiant'));
+            $reclamation = reclamation::where('user_id', '=', $request->user_id)->get();
+            return view('etudiant', compact('etudiant', 'reclamation'));
         }
     }
 
@@ -50,7 +51,8 @@ class etudiantcontroller extends Controller
         //$etudiant = DB::select('select * from etudiants where id = $id ');
         $message = "Réclamation enregistrée avec succès";
         $etudiant = etudiant::where('email', '=', $request->email)->get();
-        return view('etudiant', compact('etudiant', 'message'));
+        $reclamation = reclamation::where('user_id', '=', $request->user_id)->get();
+        return view('etudiant', compact('etudiant', 'message', 'reclamation'));
     }
 
     /**

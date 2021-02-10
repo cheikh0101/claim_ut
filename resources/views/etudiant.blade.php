@@ -24,8 +24,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><i class="fas fa-circle-notch fa-spin"></i>Profil</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#reclamation"><i class="fas fa-circle-notch fa-spin"></i>Reclamation</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/"><i class="fas fa-circle-notch fa-spin"></i>Acceuil?</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#reclamation"><i class="fas fa-circle-notch fa-spin"></i>Je réclame</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#voir"><i class="fas fa-circle-notch fa-spin"></i>Voir mes Réclamations</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/"><i class="fas fa-circle-notch fa-spin"></i>Acceuil</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/loginEtudiant"><i class="fas fa-circle-notch fa-spin"></i>Deconnexion</a></li>
                 </ul>
             </div>
@@ -144,6 +145,35 @@
                         </div>
                     </div>
                 </div>
+            </section>
+            <section class="resume-section" id="voir">
+              <div class="resume-section-content">
+                <div class="row">
+                  <div class="col">
+                    <table class="table table-striped table-inverse table-responsive">
+                      <thead class="thead-inverse">
+                        <tr>
+                          <th>Matiere</th>
+                          <th>Semestre</th>
+                          <th>Evaluation</th>
+                          <th>Commentaire</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                          @foreach ($reclamation as $item)
+                          <tr>
+                            <td scope="row">{{$item->matiere}}</td>
+                            <td>{{$item->semestre}}</td>
+                            <td>{{$item->evaluation}}</td>
+                            <td>{{$item->commentaire}}</td>
+                          </tr>
+                          @endforeach
+                        </tbody>
+                    </table>
+                  </div>
+                </div>
+                
+              </div>
             </section>
             <hr class="m-0" />
             <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
