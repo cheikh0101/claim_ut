@@ -16,7 +16,7 @@
   <body id="page-top">
 
           <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-color:lightgreen" id="sideNav">
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top " style="background-color: rgb(0, 177,106)"  id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-block"> &hearts; {{$etudiant[0]->prenom}} {{$etudiant[0]->nom}} &hearts;</span>
             </a>

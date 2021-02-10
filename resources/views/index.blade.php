@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
-  <body class="bg-dark">
+  <body style="background-color: rgb(171, 183, 183)">
 
     <!-- Navigation -->
        <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
@@ -45,15 +45,12 @@
        <div class="container">
          <div class="card border-0 shadow my-5">
            <div class="card-body p-5">
-             <h1 class="font-weight-light">Gestion des Reclamations</h1>
+             <h1 class="font-weight-light"> Bienvenue dans Claim_UT.</h1>
              <p class="lead">
               <i class="fas fa-quote-left fa-3x fa-pull-left fa-border"></i>
-               In this snippet, the background image is fixed to the body element.
-              Content on the page will scroll, but the image will remain in a fixed position!
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, inventore.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, fuga?
+              <br>
+              Cette plateforme a été conçu pour simplifier la gestion des réclamations des étudiants de l'université d'Iba Der Thiam de Thies.
               <div style="height: 180px;">
-
               </div>
             </p>
                <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
