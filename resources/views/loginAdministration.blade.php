@@ -24,7 +24,7 @@
         <div class="col-md-6">
           <img src="img/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
         </div>
-        <div class="col-md-6 contents">
+        <div class="col-md-6 ">
           <div class="row justify-content-center">
             <div class="col-md-8">
               <div class="mb-4">
@@ -40,12 +40,12 @@
               @endisset
               <div class="form-group first">
                 <label for="username">Email</label>
-                <input type="email" required class="form-control" name="email">
+                <input type="email" placeholder="Email" required class="form-control" name="email">
 
               </div>
               <div class="form-group last mb-4">
                 <label for="password">Mot de Passe</label>
-                <input type="password" required class="form-control" name="password">
+                <input type="password" placeholder="Mot de Passe" required class="form-control" name="password">
                 
               </div>
               <button type="submit" class="btn btn-block btn-primary" style="background-color: rgb(103,128,159);">Se Connecter</button>

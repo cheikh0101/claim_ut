@@ -25,6 +25,7 @@ class etudiantcontroller extends Controller
         if ($etudiant == null) {
             return view('loginEtudiant')->with(['message' => 'login incorrecte']);
         } else {
+            $etudiant = etudiant::where('email', '=', $request->email)->get();
             return view('etudiant', compact('etudiant'));
         }
     }
@@ -35,20 +36,20 @@ class etudiantcontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $id)
+    public function store(Request $request)
     {
         $reclamation = new reclamation;
         $reclamation->matiere = $request->input('matiere');
         $reclamation->semestre = $request->input('semestre');
         $reclamation->evaluation = $request->input('evaluation');
-        $reclamation->user_id = $id;
+        $reclamation->user_id = $request->input('user_id');
         $reclamation->commentaire = $request->input('commentaires');
         $reclamation->save();
 
-        $etudiant = new etudiant;
         //$etudiant = DB::select('select * from etudiants as e where e.id = $id ');
         //$etudiant = DB::select('select * from etudiants where id = $id ');
         $message = "Réclamation enregistrée avec succès";
+        $etudiant = etudiant::where('email', '=', $request->email)->get();
         return view('etudiant', compact('etudiant', 'message'));
     }
 

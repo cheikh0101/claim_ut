@@ -16,9 +16,9 @@
   <body id="page-top">
 
           <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-color: rgb(103, 128, 159)" id="sideNav">
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-color:lightgreen" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-block"> &hearts; {{$etudiant->prenom}} {{$etudiant->nom}} &hearts;</span>
+                <span class="d-block d-lg-block"> &hearts; {{$etudiant[0]->prenom}} {{$etudiant[0]->nom}} &hearts;</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -55,7 +55,7 @@
                                     Nom
                                 </div>
                                <ul class="list-group list-group-flush">
-                                <li class="list-group-item">{{$etudiant->nom}}</li>
+                                <li class="list-group-item">{{$etudiant[0]->nom}}</li>
                               </ul>
                            </div>
                         </div>
@@ -65,7 +65,7 @@
                                     Prenom
                                 </div>
                                <ul class="list-group list-group-flush">
-                                <li class="list-group-item">{{$etudiant->prenom}}</li>
+                                <li class="list-group-item">{{$etudiant[0]->prenom}}</li>
                               </ul>
                            </div>
                         </div>
@@ -75,7 +75,7 @@
                                     Email
                                 </div>
                                <ul class="list-group list-group-flush">
-                                <li class="list-group-item">{{$etudiant->email}}</li>
+                                <li class="list-group-item">{{$etudiant[0]->email}}</li>
                               </ul>
                            </div>        
                         </div>
@@ -94,7 +94,7 @@
                             <h2 class="mb-2">Faites votre reclamation</h2>
                         </div>
                         <div class="card-body shadow">
-                            <form action="/reclamation{{$etudiant->id}}" method="POST">
+                            <form action="/reclamation" method="POST">
                                 @csrf
                                 <div class="row">
                                     <div class="col-2"></div>
@@ -105,6 +105,14 @@
                                             <option>Systèmes d'Exploitation</option>
                                             <option>Algorithme et Programmation 1</option>
                                             <option>Algèbre 1</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group">
+                                          <select class="form-control" name="user_id" style="display: none" id="">
+                                            <option> {{$etudiant[0]->id}} </option>
+                                          </select>
+                                          <select class="form-control" name="email" style="display: none" id="">
+                                            <option> {{$etudiant[0]->email}} </option>
                                           </select>
                                         </div>
                                         <div class="form-group">

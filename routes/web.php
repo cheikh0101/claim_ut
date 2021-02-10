@@ -12,7 +12,7 @@ Route::get('/loginEtudiant', [etudiantcontroller::class, 'index']);
 
 Route::post('/loginEtudiant', [etudiantcontroller::class, 'authEtudiant']);
 
-Route::post('/reclamation{id}', [etudiantcontroller::class, 'store']);
+Route::post('/reclamation', [etudiantcontroller::class, 'store']);
 
 Route::get('/loginAdministration', [administrationcontroller::class, 'index']);
 
