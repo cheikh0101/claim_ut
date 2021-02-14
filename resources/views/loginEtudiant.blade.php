@@ -33,7 +33,10 @@
             <div class="col-md-8">
               <div class="mb-4">
                 <h3>Connexion <strong>Etudiant</strong></h3>
-                <p class="mb-4">Cet espace est dédié à la connexion en tant qu'étudiant.</p>
+                <p class="mb-4">
+                  Cet espace est dédié à la connexion en tant qu'étudiant.
+                  <a href="/"> Acceuil? </a>
+                </p>
               </div>
               <form action="loginEtudiant" method="post">
                 @csrf
@@ -47,7 +50,6 @@
                 <div class="form-group ">
                   <label for="username">Email</label>
                   <input type="email" placeholder="Email" required class="form-control" name="email">
-
                 </div>
                 <div class="form-group  mb-4">
                   <label for="password">Mot de Passe</label>
@@ -56,7 +58,7 @@
                 </div>
 
                 <button class="btn text-white btn-block btn-primary" type="submit">Se Connecter</button>
-
+                <small  > <a href="/" class="text-center" >Acceuil</a> </small>
               </form>
             </div>
           </div>
