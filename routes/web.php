@@ -8,19 +8,18 @@ Route::get('/', function () {
     return view('matey');
 });
 
-/*
 Route::get('/', function () {
-    return view('index');
+    return view('indexe');
 });
 
-Route::get('/loginEtudiant', [etudiantcontroller::class, 'index']);
+Route::get('/loginEtudiante', [etudiantcontroller::class, 'index']);
 
-Route::post('/loginEtudiant', [etudiantcontroller::class, 'authEtudiant']);
+Route::post('/loginEtudiante', [etudiantcontroller::class, 'authEtudiant']);
 
-Route::post('/reclamation', [etudiantcontroller::class, 'store']);
+Route::post('/reclamatione', [etudiantcontroller::class, 'store']);
 
-Route::get('/loginAdministration', [administrationcontroller::class, 'index']);
+Route::get('/loginAdministratione', [administrationcontroller::class, 'index']);
 
-Route::post('/loginAdministration', [administrationcontroller::class, 'authAdministration']);
+Route::post('/loginAdministratione', [administrationcontroller::class, 'authAdministration']);
 
-Route::get('/administration', [administrationcontroller::class, 'authAdministration']);
+Route::get('/administratione', [administrationcontroller::class, 'authAdministration']);
