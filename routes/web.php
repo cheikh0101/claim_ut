@@ -5,6 +5,11 @@ use App\Http\Controllers\etudiantcontroller;
 use App\Http\Controllers\administrationcontroller;
 
 Route::get('/', function () {
+    return view('matey');
+});
+
+/*
+Route::get('/', function () {
     return view('index');
 });
 
