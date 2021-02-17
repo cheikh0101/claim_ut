@@ -35,7 +35,7 @@
                 <h3>Connexion <strong>Etudiant</strong></h3>
                 <p class="mb-4">
                   Cet espace est dédié à la connexion en tant qu'étudiant.
-                  <a href="/"> Acceuil? </a>
+                  <a href="/"> Acceuil </a>
                 </p>
               </div>
               <form action="loginEtudiant" method="post">
@@ -58,7 +58,6 @@
                 </div>
 
                 <button class="btn text-white btn-block btn-primary" type="submit">Se Connecter</button>
-                <small  > <a href="/" class="text-center" >Acceuil</a> </small>
               </form>
             </div>
           </div>

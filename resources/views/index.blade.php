@@ -46,7 +46,7 @@
          <div class="card border-0 shadow my-5">
            <div class="card-body p-5">
              <h1 class="font-weight-light"> Bienvenue dans Claim_UT.</h1>
-             <p class="lead">
+             <p class="lead text-center">
               <i class="fas fa-quote-left fa-3x fa-pull-left fa-border"></i>
               <br>
               Cette plateforme a été conçu pour simplifier la gestion des réclamations des étudiants de l'université d'Iba Der Thiam de Thies.

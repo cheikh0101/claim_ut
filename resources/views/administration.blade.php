@@ -93,6 +93,7 @@
                                     <table class="table table-bordered" id="" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
+                                                <th>N°</th>
                                                 <th>Evaluation</th>
                                                 <th>Semestre</th>
                                                 <th>Arguments</th>
@@ -104,6 +105,7 @@
                                         </thead>
                                         @foreach ($etudiants as $reclamation)
                                         <tr>
+                                            <td>{{$reclamation->id}}</td>
                                             <td>{{$reclamation->evaluation}}</td>
                                             <td>{{$reclamation->semestre}}</td>
                                             <td>{{$reclamation->commentaire}}</td>
