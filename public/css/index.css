@@ -4,4 +4,15 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    height: 788px;
+    margin:0;
+    background:url('/img/sunset.jpg') top left / 150% 100% no-repeat;
+    animation:animback 10s infinite;
   }
+  
+@keyframes animback
+{
+    33% {background:url('/img/sunset.jpg') top left / 100% 100% no-repeat;}
+    66% {background:url('/img/mien.jpg') top left / 100% 100% no-repeat;}
+    
+}

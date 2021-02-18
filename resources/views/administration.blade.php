@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Tableau de Bord</title>
+    <title>Tableau de Bord Administrateur</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,7 +17,7 @@
           <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-color: rgb(103, 128, 159)" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-block">&hearts;{{$administration->prenom}} {{$administration->nom}} &hearts;</span>
+                <span class="d-block d-lg-block">✨Dr. {{$administration->prenom}} {{$administration->nom}}</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -56,7 +56,7 @@
                         <div class="col">
                             <div class="card">
                                 <div class="card-header">
-                                 <h4 class="card-title">Prenom</h4>
+                                 <h4 class="card-title">Prénom</h4>
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text">{{$administration->prenom}}</p>
@@ -189,7 +189,7 @@
             <hr class="m-5" />
             <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
                 <div class="container text-center">
-                  <small>Copyright &copy; <a href="" type="button" data-toggle="modal" data-target="#moi"> ABF 21 </a></small>
+                  <small>Copyright &copy; <a href="" type="button" data-toggle="modal" data-target="#moi"> ABF 2021 </a></small>
                 </div>
                 <!-- The Modal -->
                 <div class="modal fade" id="moi">
@@ -198,7 +198,7 @@
                 
                         <!-- Modal Header -->
                         <div class="modal-header">
-                        <h4 class="modal-title">Informations</h4>
+                        <h4 class="modal-title">Informations propriétaire du site</h4>
                         </div>
                 
                         <!-- Modal body -->
@@ -206,7 +206,7 @@
                             <div class="card" style="color: black;">
                                 <div class="card-body">
                                     <p class="card-text">Nom : FAM</p>
-                                    <p class="">Prenom : Alioune Badara</p>
+                                    <p class="">Prénom : Alioune Badara</p>
                                     <p class="">Email : abadara.fam@univ-thies.sn</p>
                                 </div>
                             </div>

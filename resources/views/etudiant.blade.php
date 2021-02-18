@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Tableau de Bord</title>
+    <title>Tableau de Bord Etudiant</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,7 +16,7 @@
   <body id="page-top">
 
           <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top " style="background-color: rgb(0, 177,106)"  id="sideNav">
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top " style="background-color: rgb(22, 160, 133)"  id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-block"> &hearts; {{$etudiant[0]->prenom}} {{$etudiant[0]->nom}} &hearts;</span>
             </a>
@@ -63,7 +63,7 @@
                         <div class="col">
                             <div class="card" style="width: 18rem;">
                                 <div class="card-header">
-                                    Prenom
+                                    Prénom
                                 </div>
                                <ul class="list-group list-group-flush">
                                 <li class="list-group-item">{{$etudiant[0]->prenom}}</li>
@@ -91,7 +91,7 @@
                     
                    
                     <div class="card">
-                        <div class="card-header">
+                        <div class="card-header card-body shadow">
                             <h2 class="mb-2">Faites votre reclamation</h2>
                         </div>
                         <div class="card-body shadow">
@@ -109,7 +109,7 @@
                                             <option>Analyse 1</option>
                                             <option>Algèbre 2</option>
                                             <option>Analyse 2</option>
-                                            <option>Fondementaux de Physique</option>
+                                            <option>Fondamentaux de Physique</option>
                                             <option>Electricité</option>
                                             <option>Anglais 1</option>
                                             <option>Recherche documentaire</option>
@@ -187,7 +187,7 @@
             <hr class="m-0" />
             <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
                 <div class="container text-center">
-                  <small>Copyright &copy; <a href="" type="button" data-toggle="modal" data-target="#moi"> ABF 21 </a></small>
+                  <small>Copyright &copy; <a href="" type="button" data-toggle="modal" data-target="#moi"> ABF 2021 </a></small>
                 </div>
                 <!-- The Modal -->
                 <div class="modal fade" id="moi">
@@ -196,7 +196,7 @@
                 
                         <!-- Modal Header -->
                         <div class="modal-header">
-                        <h4 class="modal-title">Informations</h4>
+                        <h4 class="modal-title">Informations propriétaire du site</h4>
                         </div>
                 
                         <!-- Modal body -->
@@ -204,7 +204,7 @@
                             <div class="card" style="color: black;">
                                 <div class="card-body">
                                     <p class="card-text">Nom : FAM</p>
-                                    <p class="">Prenom : Alioune Badara</p>
+                                    <p class="">Prénom : Alioune Badara</p>
                                     <p class="">Email : abadara.fam@univ-thies.sn</p>
                                 </div>
                             </div>

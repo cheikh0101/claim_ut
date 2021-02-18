@@ -8,18 +8,21 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="img/claims-2021941-1705361.png">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
-  <body style="background-color: rgb(171, 183, 183)">
+  <!--body style="background-color:rgb(103, 128, 159)"-->
+  <body>
+  
 
     <!-- Navigation -->
-       <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
-         <div class="container">
-           <a class="navbar-brand" href="#">Claim_UT</a>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow" >
+         <div class="container" >
+           <a class="navbar-brand"href="#">Claim_UT</a>
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
                </button>
-           <div class="collapse navbar-collapse" id="navbarResponsive">
+           <div class="collapse navbar-collapse" id="navbarResponsive" >
              <ul class="navbar-nav ml-auto">
                <li class="nav-item active">
                  <a class="nav-link" href="/">Acceuil
@@ -32,7 +35,7 @@
                     Connexion
                   </a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/loginEtudiant"><i class='fas fa-user-graduate' style='font-size:24px'></i>&nbsp;Etudiant</a>
+                    <a class="dropdown-item" href="/loginEtudiant"><i class='fas fa-user-graduate' style='font-size:17px' ></i>&nbsp;Etudiant</a>
                     <a class="dropdown-item" href="/loginAdministration"><i class='fas fa-chalkboard-teacher'></i>&nbsp;Administration</a>
                   </div>
                 </li>
@@ -43,13 +46,13 @@
 
        <!-- Page Content -->
        <div class="container">
-         <div class="card border-0 shadow my-5">
-           <div class="card-body p-5">
-             <h1 class="font-weight-light"> Bienvenue dans Claim_UT.</h1>
+          <div class="card border-0 shadow my-5">
+            <div class="card-body p-5">
+              <h1 class="font-weight-light"> Bienvenue dans Claim_UT</h1>
              <p class="lead text-center">
               <i class="fas fa-quote-left fa-3x fa-pull-left fa-border"></i>
               <br>
-              Cette plateforme a été conçu pour simplifier la gestion des réclamations des étudiants de l'université d'Iba Der Thiam de Thies.
+              Cette plateforme a été conçue pour simplifier la gestion des réclamations des étudiants de l'université d'Iba Der Thiam de Thiès.
               <div style="height: 180px;">
               </div>
             </p>
@@ -64,7 +67,7 @@
                 
                         <!-- Modal Header -->
                         <div class="modal-header">
-                        <h4 class="modal-title" style="color: black;">Informations</h4>
+                        <h4 class="modal-title" style="color: black;">Informations propriétaire du site</h4>
                         </div>
                 
                         <!-- Modal body -->
@@ -72,7 +75,7 @@
                             <div class="card" style="color: black;">
                                 <div class="card-body">
                                     <p class="card-text">Nom : FAM</p>
-                                    <p class="">Prenom : Alioune Badara</p>
+                                    <p class="">Prénom : Alioune Badara</p>
                                     <p class="">Email : abadara.fam@univ-thies.sn</p>
                                 </div>
                             </div>
@@ -96,5 +99,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  </-body>
 </html>

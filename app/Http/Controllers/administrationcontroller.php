@@ -28,7 +28,7 @@ class administrationcontroller extends Controller
     {
         $administration = administration::whereEmail($request->email)->wherePassword($request->password)->first();
         if ($administration == null) {
-            return view('loginAdministration')->with(['message' => 'login ou mot de passe incorrecte']);
+            return view('loginAdministration')->with(['message' => 'Login et/ou mot de passe incorrect(s)']);
         } else {
             $reclamations1 = reclamation::where('semestre', '=', 'SEMESTRE 1')->get();
             $reclamations2 = reclamation::where('semestre', '=', 'SEMESTRE 2')->get();

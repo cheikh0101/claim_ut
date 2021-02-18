@@ -23,7 +23,7 @@ class etudiantcontroller extends Controller
     {
         $etudiant = etudiant::whereEmail($request->email)->wherePassword($request->password)->first();
         if ($etudiant == null) {
-            return view('loginEtudiant')->with(['message' => 'login incorrecte']);
+            return view('loginEtudiant')->with(['message' => 'Login et/ou mot de passe incorrect(s)']);
         } else {
             $etudiant = etudiant::where('email', '=', $request->email)->get();
             $reclamation = reclamation::where('user_id', '=', $request->user_id)->get();

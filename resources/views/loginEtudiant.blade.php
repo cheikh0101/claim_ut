@@ -35,7 +35,7 @@
                 <h3>Connexion <strong>Etudiant</strong></h3>
                 <p class="mb-4">
                   Cet espace est dédié à la connexion en tant qu'étudiant.
-                  <a href="/"> Acceuil </a>
+                  
                 </p>
               </div>
               <form action="loginEtudiant" method="post">
@@ -44,7 +44,7 @@
                     
                     <div class="alert alert-danger alert-dismissible">
                       <button type="button" class="close" data-dismiss="alert">&times;</button>
-                      <strong>{{$message}}!</strong> .
+                      <strong>{{$message}} !</strong> 
                     </div>
                 @endisset
                 <div class="form-group ">
@@ -58,8 +58,12 @@
                 </div>
 
                 <button class="btn text-white btn-block btn-primary" type="submit">Se Connecter</button>
+                
               </form>
+              <br>
+              <a href="/"> Retourner à l'Acceuil </a>
             </div>
+            
           </div>
 
         </div>

@@ -48,9 +48,10 @@
                 <input type="password" placeholder="Mot de Passe" required class="form-control" name="password">
                 
               </div>
-              <button type="submit" class="btn btn-block btn-primary" style="background-color: rgb(140,20,252);">Se Connecter</button>
+              <button type="submit" class="btn btn-block btn-primary" style="background-color: rgba(108,99,255,255);">Se Connecter</button>
             </form>
-           
+            <br>
+              <a href="/"> Retourner à l'Acceuil </a>
             </div>
           </div>
           
