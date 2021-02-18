@@ -26,7 +26,12 @@ class etudiantcontroller extends Controller
             return view('loginEtudiant')->with(['message' => 'Login et/ou mot de passe incorrect(s)']);
         } else {
             $etudiant = etudiant::where('email', '=', $request->email)->get();
-            $reclamation = reclamation::where('user_id', '=', $request->user_id)->get();
+            $email = $request->email;
+
+            $reclamation = DB::table('etudiants')
+            ->select('prenom', 'nom', 'matiere', 'semestre', 'evaluation', 'commentaire')
+            ->join('reclamations', 'reclamations.user_id', '=', 'etudiants.id')
+            ->where('email', $email)->get();
             return view('etudiant', compact('etudiant', 'reclamation'));
         }
     }

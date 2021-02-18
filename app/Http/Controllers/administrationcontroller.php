@@ -30,11 +30,12 @@ class administrationcontroller extends Controller
         if ($administration == null) {
             return view('loginAdministration')->with(['message' => 'Login et/ou mot de passe incorrect(s)']);
         } else {
+            $i=0;
             $reclamations1 = reclamation::where('semestre', '=', 'SEMESTRE 1')->get();
             $reclamations2 = reclamation::where('semestre', '=', 'SEMESTRE 2')->get();
             $etudiants = DB::select('select * from etudiants as e,reclamations as r where e.id = r.user_id');
             //$reclamations1 = DB::select('select * from etudiants as e,reclamations as r where e.id = r.user_id AND r.semestre=$semestre1 ');
-            return view('administration', compact('reclamations1', 'reclamations2', 'administration', 'etudiants'));
+            return view('administration', compact('reclamations1', 'reclamations2', 'administration', 'etudiants','i'));
         }
     }
 

@@ -105,7 +105,7 @@
                                         </thead>
                                         @foreach ($etudiants as $reclamation)
                                         <tr>
-                                            <td>{{$reclamation->id}}</td>
+                                            <td>{{++$i}}</td>
                                             <td>{{$reclamation->evaluation}}</td>
                                             <td>{{$reclamation->semestre}}</td>
                                             <td>{{$reclamation->commentaire}}</td>
@@ -136,6 +136,7 @@
                     <table class="table table-bordered" id="" width="100%" cellspacing="0">
                         <thead>
                             <tr>
+                                <th>N°</th>
                                 <th>Evaluation</th>
                                 <th>Semestre</th>
                                 <th>Arguments</th>
@@ -143,8 +144,10 @@
                                 <th>Création</th>
                             </tr>
                         </thead>
+                         <div style="display: none"> {{$i = 0}} </div>
                         @foreach ($reclamations1 as $reclamation1)
                         <tr>
+                            <td>{{++$i}}</td>
                             <td>{{$reclamation1->evaluation}}</td>
                             <td>{{$reclamation1->semestre}}</td>
                             <td>{{$reclamation1->commentaire}}</td>
@@ -166,6 +169,7 @@
                     <table class="table table-bordered" id="" width="100%" cellspacing="0">
                         <thead>
                             <tr>
+                                <th>N°</th>
                                 <th>Evaluation</th>
                                 <th>Semestre</th>
                                 <th>Arguments</th>
@@ -173,8 +177,10 @@
                                 <th>Création</th>
                             </tr>
                         </thead>
+                        <div style="display: none"> {{$i = 0}} </div>
                         @foreach ($reclamations2 as $reclamation2)
                         <tr>
+                            <td>{{++$i}}</td>
                             <td>{{$reclamation2->evaluation}}</td>
                             <td>{{$reclamation2->semestre}}</td>
                             <td>{{$reclamation2->commentaire}}</td>
